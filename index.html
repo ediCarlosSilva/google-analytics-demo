@@ -2,16 +2,18 @@
 <html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40501021-24"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMSGRS7Q6N"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-40501021-24');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FMSGRS7Q6N');
     </script>
-
     <meta charset="utf-8">
     <title>Welcome to Bethany's Pie Shop!</title>
     <meta name="author" content="Bethany's Pie Shop">
@@ -27,28 +29,28 @@
             background-color: #e6e4d9;
             background-image: url('images/pattern.png');
         }
-
+        
         #mainheader {
             background-color: #a593c2;
         }
-
+        
         nav {
             height: 60px;
             width: 1000px;
             margin: 0 auto 20px;
         }
-
+        
         nav>ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
         }
-
+        
         nav>ul>li {
             float: left;
         }
-
+        
         nav>ul>li a {
             display: block;
             color: white;
@@ -57,24 +59,24 @@
             text-decoration: none;
             font-weight: bold;
         }
-
+        
         #leftmenu {
             float: left;
             width: 30%;
             margin-bottom: 20px;
         }
-
+        
         #main {
             float: right;
             width: 70%;
             margin-bottom: 20px;
         }
-
+        
         footer {
             clear: both;
             width: 100%;
         }
-
+        
         .searchbox {
             padding: 5px;
             margin: 10px 10px;
@@ -108,8 +110,8 @@
                 <li><a href="seasonalpies.html">Seasonal pies</a></li>
                 <li><a href="#promos">Promotions</a></li>
             </ul>
-            
-            <input type="search" class="searchbox" placeholder="Search our store" onfocus="handleSearchInteraction()"/>
+
+            <input type="search" class="searchbox" placeholder="Search our store" onfocus="handleSearchInteraction()" />
         </aside>
         <main id="main">
             <article>
@@ -127,24 +129,14 @@
                   </picture> -->
                 <!-- <img src="images/bethany.jpg" width="700" /> -->
                 <h2>Our history</h2>
-                <p>For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we
-                    opened
-                    our first store
-                    in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the world
-                    fell
-                    in love
-                    with the soft cakes, heavenly cheese cakes, spicy apple pies...<i><br>The store became a success in
+                <p>For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we opened our first store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the world fell in love with
+                    the soft cakes, heavenly cheese cakes, spicy apple pies...<i><br>The store became a success in
                         no time.</i>
                 </p>
                 <p>
 
-                    In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger
-                    building.
-                    After receiving many requests, it became clear that our next step was making it possible to order
-                    pies from the comfort of your own home and from anywhere in the world. You are now looking at the
-                    result of this:
-                    our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like
-                    it!
+                    In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger building. After receiving many requests, it became clear that our next step was making it possible to order pies from the comfort of your own home and from anywhere
+                    in the world. You are now looking at the result of this: our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like it!
                 </p>
                 <p>Download our full <a href="downloads/PriceList.zip">price list</a></p>
             </article>
@@ -160,7 +152,9 @@
         </main>
 
         <footer>
-            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address></p>
+            <p>Our address is
+                <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            </p>
             <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
             <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
             <p><small><a href="https://www.snowball.be">Created by Snowball</a></small></p>
@@ -168,8 +162,8 @@
     </div>
     <script>
         function handleSearchInteraction() {
-      
-            gtag('event','search-focus');
+
+            gtag('event', 'search-focus');
             console.info("Searh interaction event");
 
         }
